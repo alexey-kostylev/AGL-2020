@@ -40,6 +40,8 @@ namespace Agl.Tests.UnitTests
 
             var response = await service.GetCatsByGender();
 
+            response.Should().NotBeNullOrEmpty();
+
             var catsByMen = response.Single(x => x.Gender == Gender.Male).CatNames;
             catsByMen.Should().BeEquivalentTo(new[] { "Garfield", "Jim", "Max", "Tom" });
             string.Join(',', catsByMen).Should().Be("Garfield,Jim,Max,Tom", "cats should be in alphabetical order");

@@ -22,15 +22,22 @@ namespace Agl.Api.Services.Implementation
 
         public async Task<ICollection<Person>> GetPeopleAsync()
         {
+            var url = _options.Value?.PeopleEndpointUrl;
+
+            if (string.IsNullOrEmpty(url))
+            {
+                throw new InvalidOperationException($"{nameof(_options.Value.PeopleEndpointUrl)} is null");
+            }
+
             using (var httpClient = _httpClientFactory.CreateClient())
             {
-                var response = await httpClient.GetAsync(_options.Value.PeopleEndpointUrl);
+                var response = await httpClient.GetAsync(url);
                 if (!response.IsSuccessStatusCode)
                 {
                     throw new InvalidOperationException($"Error getting data from endpoint: {_options.Value.PeopleEndpointUrl}: Reason={response.ReasonPhrase}");
                 }
                 var body = await response.Content.ReadAsStringAsync();
-                var people = Newtonsoft.Json.JsonConvert.DeserializeObject<ICollection<Person>>(body);
+                var people = JsonConvert.DeserializeObject<ICollection<Person>>(body);
                 return people;
             }
         }

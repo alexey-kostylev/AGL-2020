@@ -51,7 +51,7 @@ namespace Agl.Api.Controllers
             {
                 sb.AppendLine($"<h5>{WebUtility.HtmlEncode(rec.Gender.ToString())}</h5>");
                 sb.AppendLine("<ul>");
-                foreach (var name in rec.CatNames)
+                foreach (var name in rec?.CatNames)
                 {
                     sb.AppendLine($"<li>{WebUtility.HtmlEncode(name)}</li>");
                 }
