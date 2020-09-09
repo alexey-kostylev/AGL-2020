@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1062
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agl.Api", "Agl.Api\Agl.Api.csproj", "{C86C4269-1661-4A1F-B5D7-D2B171D2BE59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agl.Tests.UnitTests", "Agl.Tests.UnitTests\Agl.Tests.UnitTests.csproj", "{75D7BCE0-1EB2-4961-898D-AB0AD5E416E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C86C4269-1661-4A1F-B5D7-D2B171D2BE59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C86C4269-1661-4A1F-B5D7-D2B171D2BE59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C86C4269-1661-4A1F-B5D7-D2B171D2BE59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C86C4269-1661-4A1F-B5D7-D2B171D2BE59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75D7BCE0-1EB2-4961-898D-AB0AD5E416E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75D7BCE0-1EB2-4961-898D-AB0AD5E416E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75D7BCE0-1EB2-4961-898D-AB0AD5E416E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75D7BCE0-1EB2-4961-898D-AB0AD5E416E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CD1BC0EC-CCDE-48B8-8324-620BBD004F87}
+	EndGlobalSection
+EndGlobal
