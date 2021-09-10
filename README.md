@@ -11,18 +11,19 @@ You need to write some code to consume the json and output a list of all the cat
 
 You can write it in any language you like. You can use any libraries/frameworks/SDKs you choose.
 
-Example:
-Male
-Angel
-Molly
-Tigger
-Female
-Gizmo
-Jasper
-Notes
-Submissions will only be accepted via github or bitbucket
-Use industry best practices
-Use the code to showcase your skill.
+##Example:
+###Male
+-Angel
+-Molly
+-Tigger
+###Female
+-Gizmo
+-Jasper
+
+###Notes
+-Submissions will only be accepted via github or bitbucket
+-Use industry best practices
+-Use the code to showcase your skill.
 
 ## Implementation
 The solution is implemented in ASP.NET Core 2.2 API. It contains a single endpoint that returns an html list of cat names along with a gender of their owner:
